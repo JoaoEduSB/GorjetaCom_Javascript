@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h3 id="tip_title">Calculadora de Gorjeta</h3>
+            <p id="border"></p>
+            <br>
+            <label for="amount">Valor da comanda</label>
+            <br>
+            <button><i class="fa-solid fa-brazilian-real-sign"></i></button><input id="amount" type="number">
+            <br>
+            <br>
+            <label for="guest">Número de pessoas</label>
+            <br>
+            <button><i class="fas fa-person"></i></button><input id="guests" type="number">
+            <br>
+            <br>
+            <label for="quality">Qualidade do serviço</label>
+            <br>
+            <select id="quality">
+                <option disabled selected value='0'>Escolha...</option>
+                <option value="0.3">30% - Acima da média</option>
+                <option value="0.2">20% - ótimo</option>
+                <option value="0.15">15% - Bom</option>
+                <option value="0.1">10% - Ruim</option>
+                <option value="0.05">5% - Horrível</option>
+            </select>
+            <div id="style">
+                <p id="border"></p>
+                <button onclick="calculate()" id="btnstyle">Calcular</button>
+            </div>
+        </div>
+        <div id="tip-amount"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
